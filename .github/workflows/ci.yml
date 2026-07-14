@@ -23,3 +23,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          
+      - name: Install Angular Dependencies
+        working-directory: AI_CHATBOT_FRONTEND/devai-assistant-ui
+        run: npm install
+
+      - name: Build API Gateway
+        working-directory: AI_CHATBOT_BACKEND/API-Gateway
+        run: mvn clean package
+        
+      - name: Build Auth Service
+        working-directory: AI_CHATBOT_BACKEND/auth
+        run: mvn clean package
+        
+      - name: Build Eureka Server
+        working-directory: AI_CHATBOT_BACKEND/eurekaserver
+        run: mvn clean package
