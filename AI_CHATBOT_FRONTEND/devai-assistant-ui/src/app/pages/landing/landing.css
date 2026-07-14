@@ -1,0 +1,522 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#070b17;
+    font-family:Segoe UI,sans-serif;
+}
+
+.landing-page{
+
+    min-height:100vh;
+    background:#070b17;
+    color:white;
+    padding:30px 70px;
+}
+
+/* Navbar */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:80px;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:26px;
+    font-weight:bold;
+
+    color:#9f6bff;
+}
+
+.logo-icon{
+
+    font-size:20px;
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:45px;
+
+    color:#c9c9c9;
+}
+
+.nav-links li{
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-links li:hover{
+
+    color:#9f6bff;
+}
+
+.nav-btn{
+
+    background:#8b5cf6;
+    color:white;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:80px;
+}
+
+.hero-left{
+
+    width:50%;
+}
+
+.hero-left h1{
+
+    font-size:72px;
+    line-height:85px;
+}
+
+.hero-left span{
+
+    color:#9f6bff;
+}
+
+.hero-left p{
+
+    margin-top:25px;
+
+    color:#bdbdbd;
+
+    width:550px;
+
+    font-size:20px;
+
+    line-height:34px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+}
+
+.primary-btn{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 36px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+.outline-btn{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid #8b5cf6;
+
+    padding:18px 36px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+/* Right Side */
+
+.hero-right{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.brain{
+
+    position:relative;
+
+    width:450px;
+
+    height:450px;
+}
+
+.ring{
+
+    position:absolute;
+
+    width:330px;
+
+    height:330px;
+
+    border:2px solid #7b4cff;
+
+    border-radius:50%;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    box-shadow:0 0 50px #7b4cff;
+}
+
+.ai-circle{
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    background:#8b5cf6;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:48px;
+
+    font-weight:bold;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    box-shadow:0 0 60px #8b5cf6;
+}
+
+.icon{
+
+    position:absolute;
+
+    width:80px;
+
+    height:80px;
+
+    background:#131b2d;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.java{
+
+    left:120px;
+    top:50px;
+}
+
+.code1{
+
+    left:40px;
+    top:180px;
+}
+
+.code2{
+
+    left:140px;
+    bottom:50px;
+}
+
+.spring{
+
+    right:20px;
+    top:180px;
+}
+
+.db{
+
+    right:80px;
+    bottom:40px;
+}
+
+/* Cards */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+}
+
+.feature-card{
+
+    background:#111827;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.3s;
+
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px #8b5cf644;
+}
+
+.feature-card h3{
+
+    margin-bottom:15px;
+}
+
+.feature-card p{
+
+    color:#bdbdbd;
+
+    line-height:28px;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+.hero{
+
+    flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+
+    width:100%;
+}
+
+.hero-left p{
+
+    width:100%;
+}
+
+.features{
+
+    grid-template-columns:1fr;
+}
+
+.nav-links{
+
+    display:none;
+}
+
+}
+/* ============================= */
+/* Hero Right */
+/* ============================= */
+
+.hero-right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.brain{
+    position:relative;
+    width:600px;
+    height:500px;
+}
+
+.ring{
+    position:absolute;
+    width:360px;
+    height:360px;
+    border:2px solid #8b5cf6;
+    border-radius:50%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:
+        0 0 20px #8b5cf6,
+        0 0 60px rgba(139,92,246,.6);
+}
+
+/* Center AI Image */
+
+.ai-container{
+    position:absolute;
+    width:240px;
+    height:240px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:2;
+}
+
+.ai-image{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* Icons */
+
+.icon{
+    position:absolute;
+    width:85px;
+    height:85px;
+    background:#151c2f;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+    transition:0.3s;
+}
+
+.icon:hover{
+    transform:scale(1.08);
+}
+
+.icon img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+/* Code */
+
+.code1,
+.code2{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.db{
+    color:white;
+    font-size:34px;
+}
+
+/* Position */
+
+.java{
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.spring{
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.code1{
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.code2{
+    left:100px;
+    bottom:20px;
+}
+
+.db{
+    right:80px;
+    bottom:20px;
+}
+
+/* Floating Animation */
+
+.java{
+    animation:float 3s ease-in-out infinite;
+}
+
+.spring{
+    animation:float 4s ease-in-out infinite;
+}
+
+.code1{
+    animation:float 5s ease-in-out infinite;
+}
+
+.code2{
+    animation:float 3.5s ease-in-out infinite;
+}
+
+.db{
+    animation:float 4.5s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
