@@ -1,4 +1,3 @@
-
 name: CI Pipeline
 
 on:
@@ -6,7 +5,10 @@ on:
     branches:
       - main
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
